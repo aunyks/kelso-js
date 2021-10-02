@@ -1,13 +1,15 @@
-# Kelso.js  
+# Kelso.js
 
-Cryptographic signatures made easy, with some polymorphism. More coming soon.  
+Cryptographic signatures made easy, with some polymorphism. More coming soon.
 
 ## Installation
+
 ```
 npm install --save kelso-js
 ```
 
 ## Usage
+
 ```javascript
 const { EthereumEntity } = require('kelso-js')
 
@@ -16,15 +18,18 @@ const alice = new EthereumEntity('<some-mnemonic-string>', 'mnemonic')
 // Bob can only verify (unless he loads a private key later)
 const bob = new EthereumEntity()
 
-// Have alice sign a message
+// Have Alice sign a message
 const signatureString = await alice.signMessageString('hi')
-// Have bob verify it
-const [isValidSignature, recoveredAddress] = await bob.verifySignatureString('hi', signatureString)
+// Have Bob verify it
+const [isValidSignature, recoveredAddress] = await bob.verifySignatureString(
+  'hi',
+  signatureString
+)
 
 // Bob makes sure that alice actually signed it
-if(isValidSignature && recoveredAddress === alice.getAddress()) {
+if (isValidSignature && recoveredAddress === alice.getAddress()) {
   console.log('Alice signed a message for Bob!')
-} 
+}
 ```
 
 **Be mindful of the license.**

@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "es2020",
-      "DOM"
-    ],
+    "lib": ["es2020", "DOM"],
     "moduleResolution": "node",
     "module": "esnext",
     "resolveJsonModule": true,
@@ -14,10 +11,6 @@
     "strict": true,
     "declaration": true
   },
-  "include": [
-    "src/**/*.js"
-  ],
-  "exclude": [
-    "node_modules",
-  ]
+  "include": ["src/**/*.js"],
+  "exclude": ["node_modules"]
 }
