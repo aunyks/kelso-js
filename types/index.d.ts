@@ -8,6 +8,10 @@ declare module 'index' {
     _hasPrivateKey: boolean
     _privateKeyString: string | null
     /**
+     * @returns { boolean }
+     */
+    hasPrivateKey(): boolean
+    /**
      *
      * @param {string} privateKeyString
      *

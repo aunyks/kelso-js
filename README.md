@@ -11,7 +11,7 @@ npm install --save kelso-js
 ## Usage
 
 ```javascript
-const { EthereumEntity } = require('kelso-js')
+const { EthereumEntity } = require('kelso')
 
 // Alice can sign *and* verify
 const alice = new EthereumEntity('<some-mnemonic-string>', 'mnemonic')
