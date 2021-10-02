@@ -5,7 +5,7 @@ Cryptographic signatures made easy, with some polymorphism. More coming soon.
 ## Installation
 
 ```
-npm install --save kelso-js
+npm install --save kelso
 ```
 
 ## Usage
